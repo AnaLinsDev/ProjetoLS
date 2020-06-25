@@ -1,10 +1,12 @@
-import {showdata} from './lib.js';
+import {showdata, getCard} from './lib.js';
 import * as moment from 'moment'
 //API DOS PERSONAGENS
 let er = ''
-let item = document.querySelector('.characters')
-let text = document.querySelector('input[id = "search-input"]')
-let botao = document.getElementsByClassName('.botaok')
+let button = document.querySelector('.but')
+let form = document.querySelector('fieldset')
+let nome = document.querySelector('#nome')
+let email = document.querySelector('input[id = "email"]')
+
 function getC(link){
   fetch(link)
   .then(response => response.json())
@@ -12,12 +14,6 @@ function getC(link){
 }
 
 getC('https://rickandmortyapi.com/api/character/')
-
-
-let button = document.querySelector('.but')
-let form = document.querySelector('fieldset')
-let nome = document.querySelector('#nome')
-let email = document.querySelector('input[id = "email"]')
 
 
 function is_email(email){
