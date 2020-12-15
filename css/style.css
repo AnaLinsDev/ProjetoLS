@@ -24,7 +24,11 @@ body ul li a {
 body ul {
   text-align: right;
 }
-
+h1.naoencontrado{
+  font-size: 150%;
+  color:whitesmoke;
+  text-align: center;
+}
 body p.sinopse{
   margin-right: 15%;
   margin-left: 15%;
@@ -86,25 +90,8 @@ body h1{
   border-color: black;
   height:50px;
 }
-table{
-  margin:auto;
-}
-th, td{
-  border-color: rgb(185,184, 184);
-  width: 500px;
-  height: 70px;;
-  text-align: center;
-}
-table thead th {
-  border-bottom: 3px solid;
-}
-table tbody tr {
-  border-bottom: 1px solid ;
-}
-table tbody tr{
-  background-image: linear-gradient(green, rgba(79, 0, 170, 0.637));
-  background-attachment: fixed;
-}
+
+
 form{
   display: flex;
   justify-content: center;
@@ -115,14 +102,15 @@ fieldset{
   text-align: center;
   height: 350px;
   width: 500px;
-  border-width: 2px;
+  border-width: 1px;
   background-attachment: fixed;
 }
 fieldset div{
   height: 50px;
 }
 form > input{
-  border-radius: 20px;
+  border-radius: 0px;
+  border: 2px;
   color:whitesmoke;
   background-attachment: fixed;
 }
@@ -206,6 +194,7 @@ p.desc{
   width: 80%;
   text-align: justify;
   font-size: 120%;
+  border: none;
   border-radius: 50px;
   margin-right:5%;
   margin-left:5%;
@@ -228,7 +217,7 @@ p.desc{
 div.containerF> div{
       background-color: black;
       color:whitesmoke;
-      border: 1px solid  whitesmoke;
+      border: 0;
       text-align: justify;
       margin-bottom: 10px;
       padding: 25px;
@@ -244,6 +233,7 @@ div.containerF> div{
     text-align: center;
     font-size: 50px;
     padding-bottom: 10px;
+    
 }
 .social i{
     transition: transform 1s;
@@ -326,6 +316,7 @@ div.item6 img{
       height: 50px;
       width:85%;
       margin: 0% 5%;
+
   }
   .container{
       grid-template-columns: 1fr;

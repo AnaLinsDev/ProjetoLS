@@ -24,7 +24,7 @@ export function getCard(elements){
         result+= element
       }}
   if (result == ''){
-      result = '<h1>Não foi encontrado</h1>'
+      result = `<h1> </h1><h1 class='naoencontrado'>Não foi encontrado</h1>`
   }
    item.innerHTML = result
   }

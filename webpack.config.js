@@ -7,3 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
 };
+
+
+// npx webpack 
+// para atualizar o bundle.js com o index.js, lib.js e cards.js
